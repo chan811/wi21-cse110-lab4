@@ -55,7 +55,14 @@
 - third loop: i = 2, doSomething(array[2], function(x) { return x*2; }) is called to push the result into newArr
   - inside doSomething it returns function(array[2] + 2) inside function it returns  (array[2] + 2) * 2 = (3 + 2) * 2 = 10 so 6 is returned by function which is then returned by doSomething which is then pushed into newArr so newArr = [6, 8, 10]
 - return: so then newArr = [6, 8, 10] is returned
-### Question 21:
+### Question 21: The output of this code is 
+```
+  1
+  4
+  3
+  2
+```
+- this is because 1 is printed first then a timeout is set for 3 and 2 and then 4 is printed next, then the timeout for 3 is set off so 3 is printed and lastly the timeout for 2 is done so 2 is printed
 
 
 
