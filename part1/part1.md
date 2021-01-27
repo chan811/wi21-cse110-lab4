@@ -47,8 +47,14 @@
 ### Question 16: == compares the values but === compares the value and the type so == tests for equality but === tests for strict equality
 ### Question 17: "How are you?" will be printed because 2 == true is false since true will be converted to a numeric type so true becomes 1 and 2 == 1 is false. Moving past the if block to the else if(2) this results in true because 2 has value, this can be seen by performing Boolean(2) thus "How are you?" is printed and you never enter the else block
 
-### Question 19: calling the function modifyArray([1,2,3], doSomething)
-
+### Question 19: calling the function modifyArray([1,2,3], doSomething) then the for loop will make 3 loops because the size of [100, 200, 300] is 3
+- first loop: i = 0, doSomething(array[0], function(x) { return x*2; }) is called to push the result into newArr
+  - inside doSomething it returns function(array[0] + 2) inside function it returns  (array[0] + 2) * 2 = (1 + 2) * 2 = 6 so 6 is returned by function which is then returned by doSomething which is then pushed into newArr so newArr = [6]
+- second loop: i = 1, doSomething(array[1], function(x) { return x*2; }) is called to push the result into newArr
+  - inside doSomething it returns function(array[1] + 2) inside function it returns  (array[1] + 2) * 2 = (2 + 2) * 2 = 8 so 6 is returned by function which is then returned by doSomething which is then pushed into newArr so newArr = [6, 8]
+- third loop: i = 2, doSomething(array[2], function(x) { return x*2; }) is called to push the result into newArr
+  - inside doSomething it returns function(array[2] + 2) inside function it returns  (array[2] + 2) * 2 = (3 + 2) * 2 = 10 so 6 is returned by function which is then returned by doSomething which is then pushed into newArr so newArr = [6, 8, 10]
+- return: so then newArr = [6, 8, 10] is returned
 ### Question 21:
 
 
