@@ -45,9 +45,9 @@
   - E. false true is converted to a number since there is a numeric type which results in 1 == 2 which is false
   - F. true Boolean(2) results in true because it has value this results in true === true since they are both type boolean and the same value the result is true
 ### Question 16: == compares the values but === compares the value and the type so == tests for equality but === tests for strict equality
-### Question 17: 
+### Question 17: "How are you?" will be printed because 2 == true is false since true will be converted to a numeric type so true becomes 1 and 2 == 1 is false. Moving past the if block to the else if(2) this results in true because 2 has value, this can be seen by performing Boolean(2) thus "How are you?" is printed and you never enter the else block
 
-### Question 19:
+### Question 19: calling the function modifyArray([1,2,3], doSomething)
 
 ### Question 21:
 
