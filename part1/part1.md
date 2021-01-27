@@ -18,10 +18,10 @@
 ### Question 10: this will result in an error because discountedPrice is not defined outside the for loop because it has block scope since we used const
 ### Question 11: the value of finalPrice will be printed which is 0 because that was the value it was initalized with since it is a const it maintains its original value and since it was initalized outside the for loop it is still defined since const has block scope
 ### Question 12: if we call discountedPrices([100, 200, 300], .5) then the for loop will make 3 loops because the size of [100, 200, 300] is 3
-- first loop: i = 0 so discountedPrice = prices[0]*(1 - discount) = 100 * .5 = 50 but since finalPrice is const it maintains its origial value 0 the same goes for discounted, discounted = []
-- second loop: since discountedPrice is a const it stays at 50 same for finalPrice and discounted
-- third loop: since discountedPrice is a const it stays at 50 same for finalPrice and discounted
-- return: so then discounted = [] is returned
+- first loop: i = 0 so discountedPrice = prices[0]*(1 - discount) = 100 * .5 = 50 but since finalPrice is const it maintains its origial value 0 so when it is pushed into discounted, discounted becomes [0]
+- second loop: i = 1 so discountedPrice = prices[1]*(1 - discount) = 200 * .5 = 100 but since finalPrice is const it maintains its origial value 0 so when it is pushed into discounted, discounted becomes [0, 0]
+- third loop: i = 2 so discountedPrice = prices[2]*(1 - discount) = 300 * .5 = 150 but since finalPrice is const it maintains its origial value 0 so when it is pushed into discounted, discounted becomes [0, 0, 0]
+- return: so then discounted = [0, 0, 0] is returned
 ### Question 13:
   - A. student.name
   - B. student['Grad Year']
@@ -29,14 +29,14 @@
   - D. student['Favorite  Teacher'].name
   - E. student.courseload[0]
 ### Question 14:
-  - A. '32' the + operation means to concatenate or add since it is next to the string then it means to concatenate the two terms
+  - A. '32' the + operation means to concatenate or add since it is next to the string then it means to concatenate the two terms so 2 becomes a string type '2'
   - B. 1 the - operation means to the subtract so the string is converted to a number which gives 3 - 2 = 1
   - C. 3 the + operation means to add since no string is present, so null is converted to a number so null becomes 0 which gives 3 - 0 = 3
-  - D. '3null' the + operation means to concatenate or add since it is next to the string then it means to concatenate the two terms
+  - D. '3null' the + operation means to concatenate or add since it is next to the string then it means to concatenate the two terms so null becomes a string type 'null'
   - E. 4 the + operation means to add since no string is present, so true is converted to a number so true becomes 1 which gives 1 + 3 = 4
   - F. 0 the + operation means to add since no string is present, so null and false is converted to a number so null becomes 0 and false becomes 0 which gives 0 + 0 = 0
-  - G. Uncaught SyntaxError: illegal character U+201C
-  - H. Uncaught SyntaxError: illegal character U+201C
+  - G. '3undefined' the + operation means to concatenate or add since it is next to the string then it means to concatenate the two terms so undefined becomes a string type 'undefined'
+  - H. NaN the - operation means to the subtract so the string and undefined is converted to a number which gives 3 - NaN = NaN although NaN is a numeric type is means not a number so subtracting not a number from a number will give not a number
 ### Question 15:
   - A. true since there is a numeric type '3' is converted to 3 which results in 3 > 2 which is true
   - B. false since both '2' and '12' are strings it compares the first character '2' and '1' since '2' > '1' the result is false
