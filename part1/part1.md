@@ -27,11 +27,11 @@
   - B. student['Grad Year']
   - C. student.greeting()
   - D. student['Favorite  Teacher'].name
-  - E. student.courseload[0]
+  - E. student.courseLoad[0]
 ### Question 14:
   - A. '32' the + operation means to concatenate or add since it is next to the string then it means to concatenate the two terms so 2 becomes a string type '2'
   - B. 1 the - operation means to the subtract so the string is converted to a number which gives 3 - 2 = 1
-  - C. 3 the + operation means to add since no string is present, so null is converted to a number so null becomes 0 which gives 3 - 0 = 3
+  - C. 3 the + operation means to add since no string is present, so null is converted to a number so null becomes 0 which gives 3 + 0 = 3
   - D. '3null' the + operation means to concatenate or add since it is next to the string then it means to concatenate the two terms so null becomes a string type 'null'
   - E. 4 the + operation means to add since no string is present, so true is converted to a number so true becomes 1 which gives 1 + 3 = 4
   - F. 0 the + operation means to add since no string is present, so null and false is converted to a number so null becomes 0 and false becomes 0 which gives 0 + 0 = 0
@@ -62,7 +62,7 @@
   3
   2
 ```
-- this is because 1 is printed first then a timeout is set for 3 and 2 and then 4 is printed next, then the timeout for 3 is set off so 3 is printed and lastly the timeout for 2 is done so 2 is printed
+- this is because 1 is printed first then a timer is set for 3 and 2 and then 4 is printed next, then the timer for 3 is set off so 3 is printed and lastly the timer for 2 is done so 2 is printed
 
 
 
